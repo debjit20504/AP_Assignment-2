@@ -79,7 +79,7 @@ public class a2
 									String video_topic = input.nextLine();
 									System.out.println("Enter filename of video: ");
 									String video_name = input.nextLine();
-									obj.add_class_material(video_topic, video_name);
+									obj.add_class_material(video_name);
 								}
 								break;
 
@@ -90,6 +90,9 @@ public class a2
 								int map1 = scn.nextInt();
 
 								if(map1 == 1) {
+									System.out.print("Enter promblem statement: ");
+									String state = scn.next();
+									System.out.print();
 									obj.addassessments1();
 								}else if(map1 == 2) {
 									obj.addassessments2();
@@ -144,9 +147,7 @@ class imp implements instructor,student
 	Scanner scn = new Scanner(System.in);
 	public void add_class_material(String slides, int slides_no)
 	{
-		String slides, content;
-		int slides_no;
-
+		String content;
 		System.out.println("Enter content of slides");
 
 		for (int x = 1; x <= slides_no; x++) {
@@ -155,10 +156,8 @@ class imp implements instructor,student
 		}
 	}
 
-	public void add_class_material(String video_topic, String video_name)
+	public void add_class_material(String video_name)
 	{
-		String video_topic, video_name;
-
 		if(video_name.contains(".mp4")) {
 
 		}
