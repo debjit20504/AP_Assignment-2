@@ -93,9 +93,9 @@ public class a2
 									System.out.print("Enter promblem statement: ");
 									String state = scn.next();
 									System.out.print();
-									obj.addassessments1();
+									
 								}else if(map1 == 2) {
-									obj.addassessments2();
+									
 								}
 								break;
 						}
